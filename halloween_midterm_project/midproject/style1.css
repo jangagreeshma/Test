@@ -1,0 +1,280 @@
+
+/* ---------- General ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("C:/Users/janga/Downloads/bats.gif") repeat;
+    color: black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+  }
+  .div
+  {
+    margin:0px 250px 250px 250px;
+    background-color:black;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 5px black;
+  }
+  
+  /* ---------- Header ---------- */
+  header {
+    background: linear-gradient( 100deg, white, orange, black);
+    color: black;
+    font-style: bold;
+    padding: 10px;
+    font-size: 30px;
+    
+    box-shadow: 0px 2px 10px black;
+  }
+  
+  .header-container {
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: flex-start;
+  
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+  
+  .title-text h1 {
+    margin: 0;
+    font-size: 35px;
+  }
+  
+  .title-text p {
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* ---------- Navigation ---------- */
+  .top-nav {
+    background-color: black;
+    border: 1px solid white;
+  }
+  
+  .top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top-nav li {
+    position: relative;
+  }
+  
+  .top-nav a {
+    display: block;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .top-nav a:hover {
+    background-color: gray;
+  }
+  
+  .top-nav a.active {
+   color: orange;
+  }
+  
+  /* ---------- Submenu for Decorating Ideas ---------- */
+  .top-nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    min-width: 160px;
+  }
+  
+  .top-nav li ul li a {
+    padding: 10px;
+    display: block;
+  }
+  
+  .top-nav li:hover ul {
+    display: block;
+  }
+  
+  .top-nav li ul li a:hover {
+    background-color: gray;
+  }
+  
+  /* ---------- Layout ---------- */
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: white;
+  }
+  
+  /* ---------- Side Menu ---------- */
+  .side-menu {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+  }
+  
+  .side-menu a {
+    background-color: orange;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid black;
+  }
+  
+  .side-menu a:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Make link turn green after click */
+  .side-menu a:active,
+  .side-menu a:focus {
+    background-color: green;
+    color: white;
+  }
+  
+  /* ---------- Content Box ---------- */
+  .content, .product-section {
+    background-color: white;
+    
+    padding: 25px 30px;
+    width: 600px;
+    
+  }
+  
+  .content h2, .product-section h2 {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .content h2::first-letter  {
+    font-size: 50px;
+
+  }
+
+
+  .content h3, .product-section h3 {
+    color: #222;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  
+  .content p, .product-section p {
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .content-1 h2, .product-section h2 {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+   .content-1 h3, .product-section h3 {
+    color: #222;
+    margin-top: 10px;
+    font-weight: bold;
+     
+  }
+  
+  
+  .content-1 p, .product-section p {
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  
+  /* ---------- Product Image ---------- */
+  .cat-img {
+    display: left;
+    margin: 10px auto;
+    width: 150px;
+    height: auto;
+    border: 0px solid black;
+    border-radius: 5px;
+  }
+  
+  .cat-link {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: orange;
+    text-decoration: none;
+  }
+  
+  .cat-link:hover {
+    color: green;
+  }
+  
+
+  /* ---------- Table Styling ---------- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    text-align: left;
+    background-color: white;
+    font-weight: bold;
+  }
+  
+  td a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  td a:hover {
+    color: green;
+  }
+  
+  td:last-child {
+    background-color: rgb(255, 212, 175);
+    font-weight: bold;
+  }
+  
+  /* ---------- Footer ---------- */
+  footer {
+    background: linear-gradient(100deg, black, orange, white);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    box-shadow: 0px -2px 10px black;
+  }
+  a.bat:hover{
+    color: green;
+  }
+  a.bat
+  {
+    font-weight: bold;
+  color: black;
+  transition: color 0.3s;
+
+  }

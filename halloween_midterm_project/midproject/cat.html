@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Halloween Store</title>
+  <link rel="icon" href="C:/Users/janga/Downloads/pumpkin.gif" type="image/png">
+  <link rel="stylesheet" href="style1.css">
+  <style>
+    .cat-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .cat-container img {
+      width: 250px;
+      border: 2px solid black;
+    }
+    .cat-details h2 {
+      color: black;
+    }
+    .side-products img {
+      width: 80px;
+      margin: 10px;
+      border: 2px solid black;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .side-products img:active {
+      border-color: green;
+    }
+    aside  div a:hover{
+      color:green;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="div">
+  <header>
+    <div class="header-container">
+      <img src="C:/Users/janga/Downloads/pumpkin.gif" alt="Pumpkin" class="logo">
+      <div class="title-text">
+        <h1>The Halloween Store</h1>
+        <p>For the little Goblin in all of us!</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="top-nav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product List</a></li>
+            <li><a href="#">Personal</a></li>
+            <li class="submenu">
+              <a href="#">Decorating Ideas</a>
+              <ul>
+                <li><a href="#">Outdoor</a></li>
+                <li><a href="#">Indoor</a></li>
+                <li><a href="#">Table</a></li>
+                <li><a href="#">Treats</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Join Email</a></li>
+          </ul>
+        </nav>
+
+
+  <main class="main-container">
+    <aside class="side-menu">
+      <a href="#">Props</a>
+      <a href="#">Costumes</a>
+      <a href="#">SpecialFX</a>
+      <a href="#">Masks</a>
+    </aside>
+   
+    <!-- CENTER CONTENT -->
+    <section class="content-1">
+      <h2>20" Deranged cat</h2>
+      <img src="C:/Users/janga/Downloads/cat1.jpg" alt="Deranged Cat" class="cat-img">
+      <p>
+        This cat provides its own light and is perfect for a backyard haunting.
+      </p>
+      <p><strong>Price:</strong> 19.99</p>
+    </section>
+
+       <!-- RIGHT SIDEBAR -->
+    <aside style="
+      width: 230px;
+      background-color: #f9e0b0;
+      padding: 15px;
+      border-left: 1px solid black;
+    ">
+      <h3 style="
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: black;
+      ">
+        Customers who bought this product also bought:
+      </h3>
+
+      <div  style="text-align: center; margin-bottom: 40px;">
+        <img src="C:/Users/janga/Downloads/bats.gif" alt="Flying Bats" style="width: 80px; display: block; margin: 0 auto 20px;">
+        <a  href="#" class="bat">Flying Bats</a>
+      </div>
+
+      <div style="text-align: center; margin-bottom: 40px;">
+        <img src="C:/Users/janga/Downloads/rat1.jpg" alt="16 inch Ugly Rat" style="width: 80px; display: block; margin: 0 auto 20px;">
+        <a href="#" class="bat">16" Ugly Rat</a>
+      </div>
+
+      <div style="text-align: center;">
+        <img src="C:/Users/janga/Downloads/strobe1.jpg" alt="Mini Strobe Light" style="width: 80px; display: block; margin: 0 auto 20px;">
+        <a href="#" class="bat">Mini Strobe Light</a>
+      </div>
+    </aside>
+
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2018 Ben Murach</p>
+  </footer>
+</body>
+</html>
