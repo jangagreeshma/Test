@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUM Computer Science - Home</title>
+    <link rel="stylesheet" href="styles/gpa.css">
+</head>
+
+<body class="body-wrapper">
+    <div class="main-box">
+        <header>
+            <div class="branding-section">
+                <img src="images/logo.png" alt="AUM Logo" class="logo-graphic">
+            </div>
+
+            <div class="navigation-header">
+                <div class="banner-title" style="height:4.5em">
+                    <h1>Computer Science Department</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Description.html">Program Description</a></li>
+                        <li><a href="TA.html">TA&nbsp;&nbsp;Application</a></li>
+                        <li><a href="GPA.html" class="highlighted">GPA Calculator</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="center-area">
+
+            <section id="calculator-section">
+                <h2>Find your GPA!</h2>
+                <p class="guide-text">
+                    Enter the number of credit hours for each course, and the letter grade for each of them.
+                    At least 2 courses should be entered.
+                </p>
+
+                <div class="title-row">
+                    <span class="label-col"></span>
+                    <span class="hours-col">Credit Hours</span>
+                    <span class="grade-col">Grade</span>
+                </div>
+
+                
+                <div class="data-row" style="margin-top:1em;">
+                    <span class="course-label">Course 1:</span>
+                    <input id="ch1" class="input-box credit-box" type="text">
+                    <input id="gr1" class="input-box grade-box" type="text" maxlength="2">
+                </div>
+
+                <div class="data-row">
+                    <span class="course-label">Course 2:</span>
+                    <input id="ch2" class="input-box credit-box" type="text">
+                    <input id="gr2" class="input-box grade-box" type="text" maxlength="2">
+                </div>
+
+                <div class="data-row">
+                    <span class="course-label">Course 3:</span>
+                    <input id="ch3" class="input-box credit-box" type="text">
+                    <input id="gr3" class="input-box grade-box" type="text" maxlength="2">
+                </div>
+
+                <div class="data-row">
+                    <span class="course-label">Course 4:</span>
+                    <input id="ch4" class="input-box credit-box" type="text">
+                    <input id="gr4" class="input-box grade-box" type="text" maxlength="2">
+                </div>
+
+                <div class="data-row">
+                    <span class="course-label">Course 5:</span>
+                    <input id="ch5" class="input-box credit-box" type="text">
+                    <input id="gr5" class="input-box grade-box" type="text" maxlength="2">
+                </div>
+
+            
+                <div class="data-row output-row">
+                    <span class="course-label">Avg GPA:</span>
+                    <input id="avgGpa" class="input-box gpa-result" type="text" readonly>
+                </div>
+
+               
+                <div class="action-buttons">
+                    <button id="submitBtn" type="button" onclick="calculateGPA()">Submit</button>
+                    <button id="resetBtn" type="button" onclick="resetGPA()">Reset</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="base-container">
+                <div class="base-left">
+                    <p>7400 East Drive</p>
+                    <p>Montgomery, AL 36117</p>
+                    <p>Local: 334-244-3000</p>
+                    <p>Toll-Free: 800-227-2649</p>
+                </div>
+                <div class="base-middle">
+                    <p>© 2025 Greeshma</p>
+                </div>
+                <div class="base-right">
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/pinterest-logo.png" alt="Pinterest"></a>
+                    <a href="#"><img src="images/facebook-social-network-logo.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="javascript/GPA.js"></script>
+</body>
+
+</html>

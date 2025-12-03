@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.body-wrapper {
+    background-position: center;
+    min-height: 100vh;
+    background-image: url('../images/aum3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-box {
+    background-color: #fefefe;
+    margin: 0 auto 4.1em;
+    max-width: 1002px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.31);
+    border: 0.16rem solid #010101;
+}
+
+header {
+    display: flex;
+    background: linear-gradient(270deg, #fe0101, #ff9a34);
+    color: #fefefe;
+    flex-direction: row;
+}
+
+.navigation-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.branding-section {
+    border-bottom: 0.16em solid #010101;
+    width: 9.3em;
+    display: flex;
+    background-color: #fefefe;
+    justify-content: center;
+    border-right: 0.16em solid #010101;
+}
+
+.logo-graphic {
+    width: 101px;
+    height: auto;
+}
+
+.banner-title {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    height: 6.1em;
+    padding: 18px 24px;
+    font-size:1.21em;
+}
+
+.banner-title h1 {
+    color: #312e2e;
+    font-size: 2.01em;
+    margin-left: 1.61em;
+}
+
+nav {
+    flex: 1;
+    background-color: #010101;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 13.5px 32px;
+    color: #fefefe;
+    transition: background-color 0.31s ease;
+    font-size: 15.1px;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #565656;
+}
+
+nav ul li a.highlighted {
+    color: #ff6701;
+}
+
+.center-area {
+    background-color: #dadada;
+    display: flex;
+}
+
+#calculator-section {
+    margin: 44px auto;
+    width: 91%;
+    max-width: 100%;
+    border-left: 1px solid #ff6701;
+    border-right: 1px solid #ff6701;
+    padding: 28px 42px 39px;
+    border-top: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+    box-sizing: border-box;
+    background: #dadada;
+}
+
+#calculator-section h2 {
+    font-size: 2.02em;
+    text-align: center;
+    margin-bottom: 0.71em;
+    margin-top: 0;
+}
+
+.guide-text {
+    font-size: 0.93em;
+    text-align: center;
+    margin-bottom: 28px;
+    color: #010101;
+}
+
+.title-row {
+    display: flex;
+    font-weight: bold;
+}
+
+.label-col {
+    width: 122px;
+}
+
+.hours-col {
+    margin-left: 6.1em;
+    text-align: center;
+    width: 142px;
+    font-size: 1.41em;
+}
+
+.grade-col {
+    width: 142px;
+    margin-left: 1.55em;
+    text-align: center;
+    font-size: 1.41em;
+}
+
+.data-row {
+    display: flex;
+    margin: 2.05em 0;
+}
+
+.course-label {
+    text-align: right;
+    width: 122px;
+    margin-right: 12.5px;
+    color: #010101;
+}
+
+.input-box {
+    padding: 3.1px 5.1px;
+    font-size: 12.1px;
+    height: 20.5px;
+    border: 1px solid #9a9a9a;
+}
+
+.input-box:focus {
+    outline: 1px solid #0000ff;
+}
+
+.credit-box {
+    width: 82px;
+    margin-left: 12.1em;
+    margin-right: 7.1em;
+}
+
+.grade-box {
+    width: 82px;
+}
+
+.output-row .gpa-result {
+    margin-left: 12.1em;
+    width: 6.7em;
+    background: #b4b4b4;
+    border-top: 2px solid #010101;
+    border-left: 2px solid #010101;
+}
+
+.action-buttons {
+    margin-top: 28px;
+}
+
+#submitBtn,
+#resetBtn {
+    background: #e7e7e7;
+    font-size: 14.1px;
+    border: 1px solid #9a9a9a;
+    margin: 0 28px;
+}
+
+#submitBtn {
+    margin-left: 19.1em;
+}
+
+#resetBtn {
+    margin-left: 2.75em;
+}
+
+button {
+    padding: 12.5px 34px;
+    cursor: pointer;
+    font-size: 16.1px;
+    transition: background-color 0.31s ease;
+    border: none;
+    border-radius: 4.1px;
+}
+
+footer {
+    margin-top: 0;
+    color: #fefefe;
+    background-color: #ff6701;
+    padding: 18px 0;
+    border-top: 0.16em solid #010101;
+}
+
+.base-container {
+    padding: 0 34px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1202px;
+}
+
+.base-left,
+.base-middle {
+    flex: 1;
+}
+
+.base-left p {
+    font-size: 13.1px;
+    margin: 2.1px 0;
+    color: #010101;
+    font-weight: 555;
+}
+
+.base-middle {
+    font-size: 14.1px;
+    text-align: center;
+}
+
+.base-middle p {
+    color: #010101;
+    font-weight: 555;
+}
+
+.base-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 13.5px;
+}
+
+.base-right img {
+    width: 35.5px;
+    height: 35.5px;
+    padding: 5.2px;
+}
