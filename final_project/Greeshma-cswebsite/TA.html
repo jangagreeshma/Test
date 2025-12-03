@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUM Computer Science - Home</title>
+    <link rel="stylesheet" href="styles/ta.css">
+</head>
+
+<body class="full-wrapper">
+    <div class="outer-container">
+        <header>
+            <div class="emblem-box">
+                <img src="images/logo.png" alt="AUM Logo" class="emblem-pic">
+            </div>
+
+            <div class="topbar-section">
+                <div class="header-text" style="height:4.5em">
+                    <h1>Computer Science Department</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Description.html">Program Description</a></li>
+                        <li><a href="TA.html" class="active-link">TA&nbsp;&nbsp;Application</a></li>
+                        <li><a href="GPA.html">GPA Calculator</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="body-content">
+            <section class="application-section">
+                <div class="form-container">
+                    <h2>Teaching Assistant Application Form</h2>
+                    <form action="survey_data.html" method="GET">
+                        <h3 style="margin-bottom: 1em;">Applicant Information</h3>
+                        <div class="input-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="studentID">Student ID:</label>
+                            <input type="text" id="studentID" name="studentID" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Gender:</label>
+                            <div class="option-group">
+                                <label>
+                                    M
+                                    <input type="checkbox" name="gender" value="Male">
+                                </label>
+                                <label>
+                                    F
+                                    <input type="checkbox" name="gender" value="Female">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="gpa">GPA:</label>
+                            <input type="text" id="gpa" name="gpa" style="margin-left: 5rem; width: 4rem" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" name="comments"></textarea>
+                        </div>
+
+                        <h3>Thank you for completing the application!</h3>
+
+                        <div class="controls-group">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <div class="grid-left">
+                    <p>7400 East Drive</p>
+                    <p>Montgomery, AL 36117</p>
+                    <p>Local: 334-244-3000</p>
+                    <p>Toll-Free: 800-227-2649</p>
+                </div>
+                <div class="grid-center">
+                    <p>© 2025 Greeshma</p>
+                </div>
+                <div class="grid-right">
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/pinterest-logo.png" alt="Pinterest"></a>
+                    <a href="#"><img src="images/facebook-social-network-logo.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="javascript/TA.js"></script>
+</body>
+
+</html>
